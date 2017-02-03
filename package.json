@@ -1,13 +1,13 @@
 {
-  "name": "Handibot V1",
+  "name": "Handibot V2",
   "main": "./index.html",
   "icon": "icon.png",
   "icon_color": "white",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "author": "Ted Hall + Ryan Sturmer + Jimmy Lucidarme",
   "website": "http://www.handibot.com",
   "description": "Installing factory macros for your Handibot ...",
-  "id": "fabmo-macro-installer-hb1",
+  "id": "fabmo-macroinstaller-h2",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-zip": "^0.17.1"
