@@ -29,29 +29,10 @@ function InstallMacro (numMacro,type_mac,name,description) {
       });
   });
 }
-////Install ALL Handbot V1
-// $("#install-macroALL").click(function(evt) {
-//     InstallMacro(3, "macros_bt","Set XYZ Zero Locations","Automatically Set Axis Zero for XYZ");
-//     InstallMacro(6, "macros","Start Spindle","Start the spindle and pause for spin up");
-//     InstallMacro(7, "macros","Stop Spindle","Stop the spindle");
-//     InstallMacro(9, "macros","Tool Change","Use ATC or manual tool change");
-//     InstallMacro(78, "macros","Manually Set Z-Zero","Set Zeroing for Z based on Current Location for use with Macro#3");
-//     InstallMacro(79, "macros","Park","Move to Park Location");
-//     InstallMacro(90, "macros","MY_Variables","Load variables (with variable information)");
-//     InstallMacro(91, "macros","Change Unit type","Change Units");
-// });
-// // Install ALL Desktop/Full Size
-// $("#install-macroALL").click(function(evt) {
-//     InstallMacro(2, "macros_bt","Z-Zero","Defines offset for Z-Zero location for #3, and sets Axis Zero for Z (use after changing cutter");
-//     InstallMacro(3, "macros_bt","Set XYZ Zero Locations","Automatically Set Axis Zero for XYZ");
-//     InstallMacro(6, "macros","Start Spindle","Start the spindle and pause for spin up");
-//     InstallMacro(7, "macros","Stop Spindle","Stop the spindle");
-//     InstallMacro(9, "macros","Tool Change","Use ATC or manual tool change");
-//     InstallMacro(78, "macros","Manually Set Z-Zero","Set Zeroing for Z based on Current Location for use with Macro#3");
-//     InstallMacro(79, "macros","Park","Move to Park Location");
-//     InstallMacro(90, "macros","MY_Variables","Load variables (with variable information)");
-//     InstallMacro(91, "macros","Change Unit type","Change Units");
-// });
+
+// NOTE: There are subtle difference in the naming and descriptions of the same ("specific") macro across versions
+//        and different macros will be loaded
+
 // //Install ALL Handibot V2
 $("#install-macroALL").click(function(evt) {
     InstallMacro(2, "macros_specific","Reset Cutter Offset Distance","Defines offset for Z-Zero location for #3, and sets Axis Zero for Z (use after changing cutter");
