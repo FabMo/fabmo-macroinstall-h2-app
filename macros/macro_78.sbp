@@ -1,5 +1,7 @@
 'Set arbitrary Z-Zero height
-'  2/2/17 th
+'  2/2/17, 3/16/17 th
+
+ IF %(25)=1 THEN GOSUB UNIT_ERROR	'make sure we are in inches for doing zeroing, auto restore mm
 
 'This routine will use the current location of the Z axis to set the cutter offset for Zeroing
 

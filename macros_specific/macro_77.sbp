@@ -1,5 +1,7 @@
 'This routine allows you to determine the height of Z-Zero touch-off plate compared to material surface
-'11/11/16, 2/2/17 th
+'11/11/16, 2/2/17 3/16/17 th
+
+IF %(25)=1 THEN GOSUB UNIT_ERROR	'make sure we are in inches for doing zeroing, auto restore mm
 
 $zero_plate_adder := .75
 $current_cutter_Zoffset := 2.0
@@ -88,3 +90,9 @@ Already_Triggered:
     PAUSE
     END
    
+END
+
+UNIT_ERROR:
+CN, 91                  'Run file switching units (automatically restored at end by FabMo?)
+RETURN
+END

@@ -1,13 +1,27 @@
 'Move to Handibot Park Location (typically moving back from work area)
-'Handibot V2
-'  2/2/17 th
+'Handibot V2, V1
+'  2/2/17, 3/16/17 th
 
-' ## needs to deal with units
+IF %(25)=1 THEN GOTO Metric
 
 'Just in case defaults not set
-	$x_park := 3
-	$y_park := 7
-	$z_park := 1.5
+Inch:
+	$x_park_in := 3
+	$y_park_in := 7
+	$z_park_in := 1.5
+	GOTO Move_to_Position_INCH
+Metric:
+	$x_park_mm := 75
+	$y_park_mm := 175
+	$z_park_mm := 40
+	GOTO Move_to_Position_MM
 
-JZ, $z_park
-J2, $x_park, $y_park
+Move_to_Position_INCH:
+  JZ, $z_park_in
+  J2, $x_park_in, $y_park_in
+  END
+
+Move_to_Position_MM:
+  JZ, $z_park_mm
+  J2, $x_park_mm, $y_park_mm
+  END

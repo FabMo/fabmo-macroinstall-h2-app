@@ -7,7 +7,7 @@
 'Initialize
 
     'Do an XYZ Zero so all axes are in a known location so we go to the right target location for zeroing
-        C3   ' calls Macro#3                        
+        C3   ' calls Macro#3   (also temporarily forces to inch)                     
 
     'Then, Move to Zeoring Target Location
         M2, 6, 0
