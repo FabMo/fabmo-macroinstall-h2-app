@@ -5,6 +5,7 @@
 '    And, it is simultaneously setting the new Axis Zero for Z
 
 'Initialize
+  ** NOT YET FULLY CORRECTING FOR METRIC // PLEASE MANUALLY SWITCH TO INCHES
     IF %(25)=1 THEN GOSUB UNIT_ERROR	'check to see software is set to inches
 
     'Do an XYZ Zero so all axes are in a known location so we go to the right target location for zeroing
